@@ -1,0 +1,17 @@
+<!-- Page de souhaits -->
+<link rel="stylesheet" href="styles.css">
+<h1>Voici un message de ma part<span id="name"></span> !</h1>
+<div class="rectangle">
+<p>Voici votre message :</p>
+<div id="salutation"></div>
+
+    <script>
+      // Récupère le prénom de l'utilisateur à partir des paramètres de l'URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const prenom = urlParams.get('prenom');
+
+      // Affiche le message de salutation personnalisé
+      const salutationDiv = document.getElementById('salutation');
+      salutationDiv.innerHTML = `<p id="message">Abdallah Lisser souhaite bonne fête à toi ${prenom} !</p>`;
+    </script>
+</script>
